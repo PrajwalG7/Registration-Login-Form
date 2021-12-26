@@ -9,7 +9,7 @@ Custom Registration-Login Form.
  # to start build process using PostCSS
  npm run dev
  
- # to run server
+ # to start server
  npm start
  
  ```
