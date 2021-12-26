@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration-Login</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="min-h-screen flex items-center justify-center bg-blue-200">
+      {{! Login Form }}
+      <div class="bg-white p-14 rounded shadow-2xl w-2/3">
+        <h2 class="text-3xl font-bold mb-10 text-purple-800">Login</h2>
+        <form class="space-y-4" action="/Login" method="POST">
+          <div>
+            <label
+              class="block mb-2 font-bold text-sm text-gray-500"
+            >Email</label>
+            <input
+              name="Email"
+              placeholder="Ex: abc@xyz.com"
+              required="true"
+              type="email"
+              class="border border-gray-400 py-1 px-2 w-full rounded outline-none focus:border-purple-800"
+            />
+          </div>
+          <div>
+            <label
+              class="block mb-2 font-bold text-sm text-gray-500"
+            >Password</label>
+            <input
+              name="Password"
+              type="text"
+              minlength="7"
+              placeholder="7 characters or longer"
+              required="true"
+              class="border border-gray-400 py-1 px-2 w-full rounded outline-none focus:border-purple-800"
+            />
+          </div>
+          <div>
+            Don't have an account?
+            <a href="/" class="mb-2 font-bold text-sm text-purple-700">
+              Sign up.
+            </a>
+          </div>
+          <button
+            class="block w-full bg-purple-400 p-4 rounded text-gray-700 hover:bg-purple-500 font-bold transition duration-500"
+          >
+            Login
+          </button>
+          <div>
+            <label class="font-bold text-sm text-gray-500">{{warning}}</label>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
